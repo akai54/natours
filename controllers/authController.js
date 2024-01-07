@@ -19,7 +19,8 @@ const createSendToken = (user, statusCode, req, res) => {
         expires: new Date(Date.now() + process.env.JWT_EXPIRE_COOKIE_TIME * 24 * 60 * 60 * 1000),
         /* We are sending an http cookie, which we can't manipulate in our browser or change it,
            so the only way to get rid of it in order to logout our users is to send a new empty http cookie */
-        httpOnly: true
+        httpOnly: true,
+        secure: req.secure || req.headers['x-forwarded-proto'] === 'https'
     })
 
     /* Remove the password from the output */
