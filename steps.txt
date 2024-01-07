@@ -1,0 +1,42 @@
+1. Read the tours data file.
+2. Send the data to the client.
+3. Receive data from the user using POST method.
+4. Implement Patch and Delete methods.
+5. Refactor code into seperate functions.
+6. Use the route method.
+7. Mount new routers on routes.
+8. Put all the routers in their own files inside the routes folder
+9. Put all the routes handlers into their own files inside the controller folder
+10. Create a server.js file and put everything that's server related in it.
+11. Make a middleware that checks the id instead of checking inside every handler.
+12. Chain middlewares functions.
+13. Use middleware static to view the html files.
+14. Setup ENV Variables.
+15. Put a condition to only run the morgan middleware if the current env is a development env.
+16. Connect to the database.
+17. Refactor for MVC, we already had controllers folder so let's make a models folder.
+18. Put the tour scheme inside the models folder.
+19. Remove the code that reads the data directory from the json file.
+20. Rewrite the handler functions to use the MongoDB.
+21. Write a script that will send all the data from the json to the database.
+22. Implement the filtering for the queries.
+23. Implement sorting.
+24. Implement field limiting.
+25. Implement pagination.
+26. Implement aliasing.
+27. Implement grouping and matching.
+28. Implement unwinding and projecting.
+29. Implement virtual properties.
+30. Implement document middleware.
+31. Implement query middleware.
+32. Handle unhandled routes.
+33. Implement a global error handling middleware.
+34. Create an AppError class.
+35. create an errorController file that contains the global error handeling function.
+36. Refactor the async code inside tour controller, by removing tht try catch blocks and using the catchAsync function instead.
+37. Add 404 errors to some handlers.
+38. Handle errors during dev or prod environments.
+39. Handle invalid database id.
+40. Handle duplicate db fields, mongoose validation errors, unhandled rejections & exceptions.
+41. Add spatial geo data as embeded documents inside tour-model.
+42. Clear the current db and imports the tours from tours.json.
